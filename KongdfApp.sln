@@ -1,0 +1,59 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Business", "Business", "{DA055C07-BF29-412A-A66E-9B1444A2C6A0}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Infrastructure", "Infrastructure", "{7B3A2A3F-E687-4439-B0A2-F14805DDDA24}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Presentation", "Presentation", "{72C8272B-4661-4749-B5F6-6B74BD22257B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KongdfApp.Core", "KongdfApp.Core\KongdfApp.Core.csproj", "{4AD0E61D-1D4E-47C4-B7A4-A71DD04020B4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KongdfApp.Services", "KongdfApp.Services\KongdfApp.Services.csproj", "{9A22FEF0-1CAA-44D4-9AFA-799D36A5BA5E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KongdfApp.Data", "KongdfApp.Data\KongdfApp.Data.csproj", "{E338A291-4FCD-4BD8-AABB-84958EFF26BD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KongdfApp.Dto", "KongdfApp.Dto\KongdfApp.Dto.csproj", "{28D0C1F9-690E-4BD6-8AB9-4FAE81DE0BA1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KongdfApp.Logging", "KongdfApp.Logging\KongdfApp.Logging.csproj", "{D22B555E-A031-4EFF-9FE0-139F761D32CF}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{4AD0E61D-1D4E-47C4-B7A4-A71DD04020B4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4AD0E61D-1D4E-47C4-B7A4-A71DD04020B4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4AD0E61D-1D4E-47C4-B7A4-A71DD04020B4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4AD0E61D-1D4E-47C4-B7A4-A71DD04020B4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9A22FEF0-1CAA-44D4-9AFA-799D36A5BA5E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9A22FEF0-1CAA-44D4-9AFA-799D36A5BA5E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9A22FEF0-1CAA-44D4-9AFA-799D36A5BA5E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9A22FEF0-1CAA-44D4-9AFA-799D36A5BA5E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E338A291-4FCD-4BD8-AABB-84958EFF26BD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E338A291-4FCD-4BD8-AABB-84958EFF26BD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E338A291-4FCD-4BD8-AABB-84958EFF26BD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E338A291-4FCD-4BD8-AABB-84958EFF26BD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{28D0C1F9-690E-4BD6-8AB9-4FAE81DE0BA1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{28D0C1F9-690E-4BD6-8AB9-4FAE81DE0BA1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{28D0C1F9-690E-4BD6-8AB9-4FAE81DE0BA1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{28D0C1F9-690E-4BD6-8AB9-4FAE81DE0BA1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D22B555E-A031-4EFF-9FE0-139F761D32CF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D22B555E-A031-4EFF-9FE0-139F761D32CF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D22B555E-A031-4EFF-9FE0-139F761D32CF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D22B555E-A031-4EFF-9FE0-139F761D32CF}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{4AD0E61D-1D4E-47C4-B7A4-A71DD04020B4} = {DA055C07-BF29-412A-A66E-9B1444A2C6A0}
+		{9A22FEF0-1CAA-44D4-9AFA-799D36A5BA5E} = {DA055C07-BF29-412A-A66E-9B1444A2C6A0}
+		{E338A291-4FCD-4BD8-AABB-84958EFF26BD} = {7B3A2A3F-E687-4439-B0A2-F14805DDDA24}
+		{28D0C1F9-690E-4BD6-8AB9-4FAE81DE0BA1} = {7B3A2A3F-E687-4439-B0A2-F14805DDDA24}
+		{D22B555E-A031-4EFF-9FE0-139F761D32CF} = {7B3A2A3F-E687-4439-B0A2-F14805DDDA24}
+	EndGlobalSection
+EndGlobal
