@@ -6,7 +6,7 @@ using Microsoft.AspNet.Identity.EntityFramework;
 
 namespace KongdfApp.Data
 {
-	public class BigBangInitializer : CreateDatabaseIfNotExists<KongdfAppDbContext>
+	public class BigBangInitializer : DropCreateDatabaseIfModelChanges<KongdfAppDbContext>
 	{
 		protected override void Seed(KongdfAppDbContext context) {
 			Initialize(context);

@@ -9,7 +9,6 @@ namespace KongdfApp.Data.Migrations
 	{
 		public Configuration() {
 			AutomaticMigrationsEnabled = false;
-			ContextKey = nameof(KongdfAppDbContext);
 		}
 
 		protected override void Seed(KongdfApp.Data.KongdfAppDbContext context) {
