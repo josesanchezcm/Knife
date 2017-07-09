@@ -1,76 +1,48 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Threading.Tasks;
-using KongdfApp.Core.Data;
-using KongdfApp.Core.Data.Repositories;
+using System.Data.Entity;
+using System.Linq;
 using KongdfApp.Core.Entities.Foundation;
-using KongdfApp.Core.Services;
+using KongdfApp.Data;
+using KongdfApp.Service.Services.Base;
 
-namespace KongdfApp.Services.Services
+namespace KongdfApp.Service.Services
 {
-	public class BaseService<TEntity> : IService<TEntity> where TEntity : BaseEntity
+	public abstract class BaseService<TEntity> : IService<TEntity> where TEntity : BaseEntity
 	{
-		public IUnitOfWork _unitOfWork { get; private set; }
-		private readonly IRepository<TEntity> _repository;
-		private bool _disposed;
+		protected KongdfAppDbContext _context;
+		protected IDbSet<TEntity> _dbset;
 
-		public BaseService(IUnitOfWork unitOfWork) {
-			_unitOfWork = unitOfWork;
-			_repository = _unitOfWork.Repository<TEntity>();
+		public BaseService(KongdfAppDbContext context) {
+			_context = context;
+			_dbset = _context.Set<TEntity>();
 		}
 
-		public TEntity Add(TEntity entity) {
-			_repository.Add(entity);
-			_unitOfWork.Commit();
-
-			return entity;
-		}
-
-		public async Task<TEntity> AddAsync(TEntity entity) {
-			_repository.Add(entity);
-			await _unitOfWork.CommitAsync();
-
-			return entity;
-		}
-
-		public void Update(TEntity entity) {
-			_repository.Update(entity);
-			_unitOfWork.Commit();
-		}
-
-		public void Delete(TEntity entity) {
-			_repository.Delete(entity);
-			_unitOfWork.Commit();
-		}
-
-		public Task<List<TEntity>> GetAllAsync() {
-			return _repository.GetAllAsync();
-		}
-
-		public Task<TEntity> GetByIdAsync(int id) {
-			return _repository.GetByIdAsync(id);
-		}
-
-		public Task UpdateAsync(TEntity entity) {
-			_repository.Update(entity);
-			return _unitOfWork.CommitAsync();
-		}
-
-		public Task DeleteAsync(TEntity entity) {
-			_repository.Delete(entity);
-			return _unitOfWork.CommitAsync();
-		}
-
-		public void Dispose() {
-			Dispose(true);
-			GC.SuppressFinalize(this);
-		}
-
-		public virtual void Dispose(bool disposing) {
-			if ( !_disposed && disposing ) {
-				_unitOfWork.Dispose();
+		public virtual TEntity Add(TEntity entity) {
+			if ( entity == null ) {
+				throw new ArgumentNullException("entity");
 			}
-			_disposed = true;
+
+			_dbset.Add(entity);
+			_context.SaveChanges();
+
+			return entity;
+		}
+
+		public virtual void Update(TEntity entity) {
+			if ( entity == null ) throw new ArgumentNullException("entity");
+			_context.Entry(entity).State = EntityState.Modified;
+			_context.SaveChanges();
+		}
+
+		public virtual void Delete(TEntity entity) {
+			if ( entity == null ) throw new ArgumentNullException("entity");
+			_dbset.Remove(entity);
+			_context.SaveChanges();
+		}
+
+		public virtual List<TEntity> GetAll() {
+			return _dbset.ToList();
 		}
 	}
 }

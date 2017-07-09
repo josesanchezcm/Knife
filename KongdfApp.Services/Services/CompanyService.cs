@@ -1,12 +1,17 @@
-﻿using KongdfApp.Core.Data;
+﻿using System.Data.Entity;
 using KongdfApp.Core.Entities;
-using KongdfApp.Core.Services;
+using KongdfApp.Data;
+using KongdfApp.Service.Services.Base;
 
-namespace KongdfApp.Services.Services
+namespace KongdfApp.Service.Services
 {
 	public class CompanyService : BaseService<Company>, ICompanyService
 	{
-		public CompanyService(IUnitOfWork unitOfWork) : base(unitOfWork) {
+		protected KongdfAppDbContext _context;
+		protected IDbSet<Company> _dbset;
+		public CompanyService(KongdfAppDbContext context) : base(context) {
+			_context = context;
+			_dbset = _context.Set<Company>();
 		}
 	}
 }

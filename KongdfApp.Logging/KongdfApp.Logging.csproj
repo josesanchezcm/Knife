@@ -44,14 +44,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Logging\Base\ILogger.cs" />
     <Compile Include="Logging\NLogLogger.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\KongdfApp.Core\KongdfApp.Core.csproj">
-      <Project>{4AD0E61D-1D4E-47C4-B7A4-A71DD04020B4}</Project>
-      <Name>KongdfApp.Core</Name>
-    </ProjectReference>
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />

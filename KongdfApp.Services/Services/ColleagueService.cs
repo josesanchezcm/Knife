@@ -1,12 +1,23 @@
-﻿using KongdfApp.Core.Data;
+﻿using System.Collections.Generic;
+using System.Data.Entity;
+using System.Threading.Tasks;
 using KongdfApp.Core.Entities;
-using KongdfApp.Core.Services;
+using KongdfApp.Data;
+using KongdfApp.Service.Services.Base;
 
-namespace KongdfApp.Services.Services
+namespace KongdfApp.Service.Services
 {
 	public class ColleagueService : BaseService<Colleague>, IColleagueService
 	{
-		public ColleagueService(IUnitOfWork unitOfWork) : base(unitOfWork) {
+		protected KongdfAppDbContext _context;
+		protected IDbSet<Colleague> _dbset;
+		public ColleagueService(KongdfAppDbContext context) : base(context) {
+			_context = context;
+			_dbset = _context.Set<Colleague>();
+		}
+		
+		public virtual async Task<List<Colleague>> GetAllAsync() {
+			return await _dbset.ToListAsync();
 		}
 	}
 }

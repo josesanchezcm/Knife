@@ -1,12 +1,17 @@
-﻿using KongdfApp.Core.Data;
+﻿using System.Data.Entity;
 using KongdfApp.Core.Entities;
-using KongdfApp.Core.Services;
+using KongdfApp.Data;
+using KongdfApp.Service.Services.Base;
 
-namespace KongdfApp.Services.Services
+namespace KongdfApp.Service.Services
 {
 	public class ResumeService : BaseService<Resume>, IResumeService
 	{
-		public ResumeService(IUnitOfWork unitOfWork) : base(unitOfWork) {
+		protected KongdfAppDbContext _context;
+		protected IDbSet<Resume> _dbset;
+		public ResumeService(KongdfAppDbContext context) : base(context) {
+			_context = context;
+			_dbset = _context.Set<Resume>();
 		}
 	}
 }

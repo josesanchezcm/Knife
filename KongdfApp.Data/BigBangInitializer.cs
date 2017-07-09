@@ -41,10 +41,8 @@ namespace KongdfApp.Data
 				if ( userResult.Succeeded ) {
 					userManager.AddToRole(user.Id, "Admin");
 				}
-
-
-
-				context.Commit();
+				
+				context.SaveChanges();
 			}
 			catch ( Exception ex ) {
 
