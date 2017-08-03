@@ -20,7 +20,6 @@ namespace KongdfApp.Data
 
 		public KongdfAppDbContext()
 			: base("KongdfAppDbConnection") {
-
 		}
 
 		public KongdfAppDbContext(string nameOrConnectionString, ILogger logger)
