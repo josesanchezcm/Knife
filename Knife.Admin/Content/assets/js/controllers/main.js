@@ -9,10 +9,10 @@ angular.module('AceApp')
 	};
 
 	$scope.ace.site = {
-		brand_text : 'Ace Admin',
+		brand_text : 'Kent\'s Admin',
 		brand_icon : 'fa fa-leaf',
 		version : '1.4'
-	};
+	}; 
 
 	//sidebar variables
 	$scope.ace.sidebar = {
