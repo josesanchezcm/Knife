@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace KongdfApp.Dto.Dtos
+namespace Knife.Dto.Dtos
 {
 	public class ColleagueDto : BaseDto
 	{

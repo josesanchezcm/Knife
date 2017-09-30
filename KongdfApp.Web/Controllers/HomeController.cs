@@ -1,7 +1,7 @@
 ﻿using System.Web.Mvc;
-using KongdfApp.Service.Services;
+using Knife.Service.Services;
 
-namespace KongdfApp.Web.Controllers
+namespace Knife.Web.Controllers
 {
 	public class HomeController : Controller
 	{
@@ -9,7 +9,7 @@ namespace KongdfApp.Web.Controllers
 		}
 
 		public ActionResult Index() {
-			new CompanyService(new Data.KongdfAppDbContext()).GetAll();
+			new CompanyService(new Data.KnifeDbContext()).GetAll();
 			return View();
 		}
 

@@ -1,6 +1,6 @@
-﻿using KongdfApp.Core.Entities;
+﻿using Knife.Core.Entities;
 
-namespace KongdfApp.Service.Services.Base
+namespace Knife.Service.Services.Base
 {
 	public interface ICompanyService : IService<Company>
 	{

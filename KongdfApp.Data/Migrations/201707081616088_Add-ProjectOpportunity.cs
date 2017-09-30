@@ -1,4 +1,4 @@
-namespace KongdfApp.Data.Migrations
+namespace Knife.Data.Migrations
 {
     using System;
     using System.Data.Entity.Migrations;

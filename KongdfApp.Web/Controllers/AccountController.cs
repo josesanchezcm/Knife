@@ -8,9 +8,9 @@ using System.Web.Mvc;
 using Microsoft.AspNet.Identity;
 using Microsoft.AspNet.Identity.Owin;
 using Microsoft.Owin.Security;
-using KongdfApp.Web.Models;
+using Knife.Web.Models;
 
-namespace KongdfApp.Web.Controllers
+namespace Knife.Web.Controllers
 {
     [Authorize]
     public class AccountController : Controller

@@ -1,7 +1,7 @@
 ﻿using System.Web;
 using System.Web.Optimization;
 
-namespace KongdfApp.Web
+namespace Knife.Web
 {
 	public class BundleConfig
 	{

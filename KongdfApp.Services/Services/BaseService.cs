@@ -2,18 +2,18 @@
 using System.Collections.Generic;
 using System.Data.Entity;
 using System.Linq;
-using KongdfApp.Core.Entities.Foundation;
-using KongdfApp.Data;
-using KongdfApp.Service.Services.Base;
+using Knife.Core.Entities.Foundation;
+using Knife.Data;
+using Knife.Service.Services.Base;
 
-namespace KongdfApp.Service.Services
+namespace Knife.Service.Services
 {
 	public abstract class BaseService<TEntity> : IService<TEntity> where TEntity : BaseEntity
 	{
-		protected KongdfAppDbContext _context;
+		protected KnifeDbContext _context;
 		protected IDbSet<TEntity> _dbset;
 
-		public BaseService(KongdfAppDbContext context) {
+		public BaseService(KnifeDbContext context) {
 			_context = context;
 			_dbset = _context.Set<TEntity>();
 		}

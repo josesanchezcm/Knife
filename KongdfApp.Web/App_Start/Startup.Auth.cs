@@ -5,9 +5,9 @@ using Microsoft.Owin;
 using Microsoft.Owin.Security.Cookies;
 using Microsoft.Owin.Security.Google;
 using Owin;
-using KongdfApp.Web.Models;
+using Knife.Web.Models;
 
-namespace KongdfApp.Web
+namespace Knife.Web
 {
     public partial class Startup
     {

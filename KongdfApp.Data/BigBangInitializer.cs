@@ -1,19 +1,19 @@
 ﻿using System;
 using System.Data.Entity;
-using KongdfApp.Core.Entities;
+using Knife.Core.Entities;
 using Microsoft.AspNet.Identity;
 using Microsoft.AspNet.Identity.EntityFramework;
 
-namespace KongdfApp.Data
+namespace Knife.Data
 {
-	public class BigBangInitializer : DropCreateDatabaseIfModelChanges<KongdfAppDbContext>
+	public class BigBangInitializer : DropCreateDatabaseIfModelChanges<KnifeDbContext>
 	{
-		protected override void Seed(KongdfAppDbContext context) {
+		protected override void Seed(KnifeDbContext context) {
 			Initialize(context);
 			base.Seed(context);
 		}
 
-		public void Initialize(KongdfAppDbContext context) {
+		public void Initialize(KnifeDbContext context) {
 			try {
 				var userManager = new UserManager<ApplicationUser>(new UserStore<ApplicationUser>(context));
 				userManager.UserValidator = new UserValidator<ApplicationUser>(userManager) {

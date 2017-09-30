@@ -1,7 +1,7 @@
 ﻿using System.Data.Entity.ModelConfiguration;
-using KongdfApp.Data.Entities;
+using Knife.Data.Entities;
 
-namespace KongdfApp.Data.Configurations
+namespace Knife.Data.Configurations
 {
 	public class ProjectOpportunityConfiguration : EntityTypeConfiguration<ProjectOpportunity>
 	{

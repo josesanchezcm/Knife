@@ -2,7 +2,7 @@
 using System.Reflection;
 using Autofac.Integration.Mvc;
 
-namespace KongdfApp.Web.Capsule.Modules
+namespace Knife.Web.Capsule.Modules
 {
 	public class ControllerCapsuleModule : Autofac.Module
     {
@@ -10,11 +10,11 @@ namespace KongdfApp.Web.Capsule.Modules
         {
 
 			// Register the MVC Controllers
-			//builder.RegisterControllers(Assembly.Load("KongdfApp.Web"));
+			//builder.RegisterControllers(Assembly.Load("Knife.Web"));
 
 			// Register the Web API Controllers
 			//builder.RegisterApiControllers(Assembly.GetCallingAssembly());
-			builder.RegisterControllers(Assembly.Load("KongdfApp.Web"));
+			builder.RegisterControllers(Assembly.Load("Knife.Web"));
         }
     }
 }

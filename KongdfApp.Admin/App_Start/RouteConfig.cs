@@ -5,7 +5,7 @@ using System.Web;
 using System.Web.Mvc;
 using System.Web.Routing;
 
-namespace KongdfApp.Admin
+namespace Knife.Admin
 {
 	public class RouteConfig
 	{

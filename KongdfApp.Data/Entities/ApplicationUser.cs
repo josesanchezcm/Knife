@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 using Microsoft.AspNet.Identity;
 using Microsoft.AspNet.Identity.EntityFramework;
 
-namespace KongdfApp.Core.Entities
+namespace Knife.Core.Entities
 {
 	public class ApplicationUser : IdentityUser
 	{

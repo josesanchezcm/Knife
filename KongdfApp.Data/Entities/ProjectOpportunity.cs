@@ -3,9 +3,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using KongdfApp.Core.Entities.Foundation;
+using Knife.Core.Entities.Foundation;
 
-namespace KongdfApp.Data.Entities
+namespace Knife.Data.Entities
 {
 	public class ProjectOpportunity : AuditableEntity<int>
 	{

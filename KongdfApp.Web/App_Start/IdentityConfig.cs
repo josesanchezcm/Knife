@@ -10,9 +10,9 @@ using Microsoft.AspNet.Identity.EntityFramework;
 using Microsoft.AspNet.Identity.Owin;
 using Microsoft.Owin;
 using Microsoft.Owin.Security;
-using KongdfApp.Web.Models;
+using Knife.Web.Models;
 
-namespace KongdfApp.Web
+namespace Knife.Web
 {
     public class EmailService : IIdentityMessageService
     {

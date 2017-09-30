@@ -1,17 +1,17 @@
 ﻿using System.Collections.Generic;
 using System.Data.Entity;
 using System.Threading.Tasks;
-using KongdfApp.Core.Entities;
-using KongdfApp.Data;
-using KongdfApp.Service.Services.Base;
+using Knife.Core.Entities;
+using Knife.Data;
+using Knife.Service.Services.Base;
 
-namespace KongdfApp.Service.Services
+namespace Knife.Service.Services
 {
 	public class ColleagueService : BaseService<Colleague>, IColleagueService
 	{
-		protected KongdfAppDbContext _context;
+		protected KnifeDbContext _context;
 		protected IDbSet<Colleague> _dbset;
-		public ColleagueService(KongdfAppDbContext context) : base(context) {
+		public ColleagueService(KnifeDbContext context) : base(context) {
 			_context = context;
 			_dbset = _context.Set<Colleague>();
 		}

@@ -68,9 +68,9 @@
     <Compile Include="Services\ColleagueService.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\KongdfApp.Data\KongdfApp.Data.csproj">
+    <ProjectReference Include="..\KongdfApp.Data\Knife.Data.csproj">
       <Project>{E338A291-4FCD-4BD8-AABB-84958EFF26BD}</Project>
-      <Name>KongdfApp.Data</Name>
+      <Name>Knife.Data</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>

@@ -1,7 +1,7 @@
 ﻿using System;
-using KongdfApp.Core.Logging;
+using Knife.Core.Logging;
 
-namespace KongdfApp.Logging.Logging
+namespace Knife.Logging.Logging
 {
 	public class NLogLogger : ILogger
 	{

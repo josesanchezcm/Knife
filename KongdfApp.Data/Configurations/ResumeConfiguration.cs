@@ -1,7 +1,7 @@
 ﻿using System.Data.Entity.ModelConfiguration;
-using KongdfApp.Core.Entities;
+using Knife.Core.Entities;
 
-namespace KongdfApp.Data.Configurations
+namespace Knife.Data.Configurations
 {
 	public class ResumeConfiguration : EntityTypeConfiguration<Resume>
 	{

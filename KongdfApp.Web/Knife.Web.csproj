@@ -25,6 +25,7 @@
     <UseGlobalApplicationHostFile />
     <NuGetPackageImportStamp>
     </NuGetPackageImportStamp>
+    <Use64BitIISExpress />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -259,17 +260,17 @@
     <Content Include="Scripts\jquery-1.10.2.min.map" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\KongdfApp.Data\KongdfApp.Data.csproj">
+    <ProjectReference Include="..\KongdfApp.Data\Knife.Data.csproj">
       <Project>{E338A291-4FCD-4BD8-AABB-84958EFF26BD}</Project>
-      <Name>KongdfApp.Data</Name>
+      <Name>Knife.Data</Name>
     </ProjectReference>
-    <ProjectReference Include="..\KongdfApp.Logging\KongdfApp.Logging.csproj">
+    <ProjectReference Include="..\KongdfApp.Logging\Knife.Logging.csproj">
       <Project>{D22B555E-A031-4EFF-9FE0-139F761D32CF}</Project>
-      <Name>KongdfApp.Logging</Name>
+      <Name>Knife.Logging</Name>
     </ProjectReference>
-    <ProjectReference Include="..\KongdfApp.Services\KongdfApp.Service.csproj">
+    <ProjectReference Include="..\KongdfApp.Services\Knife.Service.csproj">
       <Project>{9A22FEF0-1CAA-44D4-9AFA-799D36A5BA5E}</Project>
-      <Name>KongdfApp.Service</Name>
+      <Name>Knife.Service</Name>
     </ProjectReference>
   </ItemGroup>
   <PropertyGroup>

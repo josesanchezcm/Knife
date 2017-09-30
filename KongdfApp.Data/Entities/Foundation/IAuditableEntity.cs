@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace KongdfApp.Core.Entities.Foundation
+namespace Knife.Core.Entities.Foundation
 {
 	public interface IAuditableEntity
 	{

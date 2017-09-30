@@ -1,6 +1,6 @@
-﻿using KongdfApp.Core.Entities.Foundation;
+﻿using Knife.Core.Entities.Foundation;
 
-namespace KongdfApp.Service.Services.Base
+namespace Knife.Service.Services.Base
 {
 	public interface IService<TEntity> where TEntity : BaseEntity
 	{

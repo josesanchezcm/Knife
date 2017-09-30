@@ -3,7 +3,7 @@ using System.ComponentModel.DataAnnotations;
 using Microsoft.AspNet.Identity;
 using Microsoft.Owin.Security;
 
-namespace KongdfApp.Web.Models
+namespace Knife.Web.Models
 {
     public class IndexViewModel
     {

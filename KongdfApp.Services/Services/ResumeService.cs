@@ -1,15 +1,15 @@
 ﻿using System.Data.Entity;
-using KongdfApp.Core.Entities;
-using KongdfApp.Data;
-using KongdfApp.Service.Services.Base;
+using Knife.Core.Entities;
+using Knife.Data;
+using Knife.Service.Services.Base;
 
-namespace KongdfApp.Service.Services
+namespace Knife.Service.Services
 {
 	public class ResumeService : BaseService<Resume>, IResumeService
 	{
-		protected KongdfAppDbContext _context;
+		protected KnifeDbContext _context;
 		protected IDbSet<Resume> _dbset;
-		public ResumeService(KongdfAppDbContext context) : base(context) {
+		public ResumeService(KnifeDbContext context) : base(context) {
 			_context = context;
 			_dbset = _context.Set<Resume>();
 		}

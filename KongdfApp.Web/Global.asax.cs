@@ -8,7 +8,7 @@ using System.Web.Routing;
 using Autofac;
 using Autofac.Integration.Mvc;
 
-namespace KongdfApp.Web
+namespace Knife.Web
 {
     public class MvcApplication : System.Web.HttpApplication
     {

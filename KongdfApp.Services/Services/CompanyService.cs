@@ -1,15 +1,15 @@
 ﻿using System.Data.Entity;
-using KongdfApp.Core.Entities;
-using KongdfApp.Data;
-using KongdfApp.Service.Services.Base;
+using Knife.Core.Entities;
+using Knife.Data;
+using Knife.Service.Services.Base;
 
-namespace KongdfApp.Service.Services
+namespace Knife.Service.Services
 {
 	public class CompanyService : BaseService<Company>, ICompanyService
 	{
-		protected KongdfAppDbContext _context;
+		protected KnifeDbContext _context;
 		protected IDbSet<Company> _dbset;
-		public CompanyService(KongdfAppDbContext context) : base(context) {
+		public CompanyService(KnifeDbContext context) : base(context) {
 			_context = context;
 			_dbset = _context.Set<Company>();
 		}

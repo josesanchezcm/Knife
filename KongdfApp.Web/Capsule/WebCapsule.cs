@@ -1,12 +1,12 @@
 ﻿using Autofac;
 using Autofac.Integration.Mvc;
 using System.Web.Mvc;
-using KongdfApp.Core.Logging;
-using KongdfApp.Data;
-using KongdfApp.Logging.Logging;
-using KongdfApp.Web.Capsule.Modules;
+using Knife.Core.Logging;
+using Knife.Data;
+using Knife.Logging.Logging;
+using Knife.Web.Capsule.Modules;
 
-namespace KongdfApp.Web.Capsule
+namespace Knife.Web.Capsule
 {
 	public class WebCapsule
     {
@@ -14,11 +14,11 @@ namespace KongdfApp.Web.Capsule
         {
             var builder = new ContainerBuilder();
 
-            const string nameOrConnectionString = "name=KongdfAppDbConnection";
+            const string nameOrConnectionString = "name=KnifeDbConnection";
             builder.Register(b =>
             {
                 var logger = b.ResolveOptional<ILogger>();
-                var context = new KongdfAppDbContext(nameOrConnectionString, logger);
+                var context = new KnifeDbContext(nameOrConnectionString, logger);
                 return context;
             }).InstancePerLifetimeScope();
 

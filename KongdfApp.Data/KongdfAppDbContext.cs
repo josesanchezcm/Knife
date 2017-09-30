@@ -4,25 +4,25 @@ using System.Data.Common;
 using System.Data.Entity;
 using System.Data.Entity.Core.Objects;
 using System.Data.Entity.ModelConfiguration;
-using KongdfApp.Core.Entities;
-using KongdfApp.Core.Logging;
+using Knife.Core.Entities;
+using Knife.Core.Logging;
 using Microsoft.AspNet.Identity.EntityFramework;
 using System.Linq;
-using KongdfApp.Core.Entities.Foundation;
+using Knife.Core.Entities.Foundation;
 using System.Threading;
 
-namespace KongdfApp.Data
+namespace Knife.Data
 {
-	public class KongdfAppDbContext : IdentityDbContext<ApplicationUser>
+	public class KnifeDbContext : IdentityDbContext<ApplicationUser>
 	{
 		static readonly object Lock = new object();
 		static bool _databaseInitialized;
 
-		public KongdfAppDbContext()
-			: base("KongdfAppDbConnection") {
+		public KnifeDbContext()
+			: base("KnifeDbConnection") {
 		}
 
-		public KongdfAppDbContext(string nameOrConnectionString, ILogger logger)
+		public KnifeDbContext(string nameOrConnectionString, ILogger logger)
 			: base(nameOrConnectionString) {
 			if ( logger != null ) {
 				Database.Log = logger.Log;
@@ -77,8 +77,8 @@ namespace KongdfApp.Data
 			return base.SaveChanges();
 		}
 
-		public static KongdfAppDbContext Create() {
-			return new KongdfAppDbContext(nameOrConnectionString: "KongdfAppDbConnection", logger: null);
+		public static KnifeDbContext Create() {
+			return new KnifeDbContext(nameOrConnectionString: "KnifeDbConnection", logger: null);
 		}
 
 		#region DbSets

@@ -4,7 +4,7 @@ using System.Linq;
 using System.Web;
 using System.Web.Mvc;
 
-namespace KongdfApp.Admin.Controllers
+namespace Knife.Admin.Controllers
 {
     public class AccountController : Controller
     {

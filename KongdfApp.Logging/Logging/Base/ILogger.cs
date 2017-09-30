@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace KongdfApp.Core.Logging
+namespace Knife.Core.Logging
 {
 	public interface ILogger
 	{

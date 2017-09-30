@@ -103,9 +103,9 @@
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\KongdfApp.Logging\KongdfApp.Logging.csproj">
+    <ProjectReference Include="..\KongdfApp.Logging\Knife.Logging.csproj">
       <Project>{D22B555E-A031-4EFF-9FE0-139F761D32CF}</Project>
-      <Name>KongdfApp.Logging</Name>
+      <Name>Knife.Logging</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
