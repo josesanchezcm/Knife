@@ -9,17 +9,17 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "01 - Infrastructure", "01 -
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "03 - Presentation", "03 - Presentation", "{72C8272B-4661-4749-B5F6-6B74BD22257B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Knife.Service", "KongdfApp.Services\Knife.Service.csproj", "{9A22FEF0-1CAA-44D4-9AFA-799D36A5BA5E}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Knife.Service", "Knife.Services\Knife.Service.csproj", "{9A22FEF0-1CAA-44D4-9AFA-799D36A5BA5E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Knife.Data", "KongdfApp.Data\Knife.Data.csproj", "{E338A291-4FCD-4BD8-AABB-84958EFF26BD}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Knife.Data", "Knife.Data\Knife.Data.csproj", "{E338A291-4FCD-4BD8-AABB-84958EFF26BD}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Knife.Dto", "KongdfApp.Dto\Knife.Dto.csproj", "{28D0C1F9-690E-4BD6-8AB9-4FAE81DE0BA1}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Knife.Dto", "Knife.Dto\Knife.Dto.csproj", "{28D0C1F9-690E-4BD6-8AB9-4FAE81DE0BA1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Knife.Logging", "KongdfApp.Logging\Knife.Logging.csproj", "{D22B555E-A031-4EFF-9FE0-139F761D32CF}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Knife.Logging", "Knife.Logging\Knife.Logging.csproj", "{D22B555E-A031-4EFF-9FE0-139F761D32CF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Knife.Web", "KongdfApp.Web\Knife.Web.csproj", "{D10B4691-FBB0-46C3-8340-09D0E29399BA}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Knife.Web", "Knife.Web\Knife.Web.csproj", "{D10B4691-FBB0-46C3-8340-09D0E29399BA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Knife.Admin", "KongdfApp.Admin\Knife.Admin.csproj", "{A67E2733-BD74-4CD2-B272-CA5EE23EC753}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Knife.Admin", "Knife.Admin\Knife.Admin.csproj", "{A67E2733-BD74-4CD2-B272-CA5EE23EC753}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

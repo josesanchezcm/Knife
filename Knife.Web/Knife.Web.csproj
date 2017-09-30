@@ -260,15 +260,15 @@
     <Content Include="Scripts\jquery-1.10.2.min.map" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\KongdfApp.Data\Knife.Data.csproj">
+    <ProjectReference Include="..\Knife.Data\Knife.Data.csproj">
       <Project>{E338A291-4FCD-4BD8-AABB-84958EFF26BD}</Project>
       <Name>Knife.Data</Name>
     </ProjectReference>
-    <ProjectReference Include="..\KongdfApp.Logging\Knife.Logging.csproj">
+    <ProjectReference Include="..\Knife.Logging\Knife.Logging.csproj">
       <Project>{D22B555E-A031-4EFF-9FE0-139F761D32CF}</Project>
       <Name>Knife.Logging</Name>
     </ProjectReference>
-    <ProjectReference Include="..\KongdfApp.Services\Knife.Service.csproj">
+    <ProjectReference Include="..\Knife.Services\Knife.Service.csproj">
       <Project>{9A22FEF0-1CAA-44D4-9AFA-799D36A5BA5E}</Project>
       <Name>Knife.Service</Name>
     </ProjectReference>
